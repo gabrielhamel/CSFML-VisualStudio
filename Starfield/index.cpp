@@ -15,6 +15,5 @@ int main(int ac, char **av)
         sfRenderWindow_clear(window, sfBlack);
         sfRenderWindow_display(window);
     }
-
     return (0);
 }
