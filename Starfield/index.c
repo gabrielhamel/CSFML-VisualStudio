@@ -3,11 +3,11 @@
 int main(int ac, char **av)
 {
     sfVideoMode mode = { 800, 600, 32 };
-    sfRenderWindow *window = sfRenderWindow_create(mode, "Starfield", sfClose, NULL);
+    sfRenderWindow *window = sfRenderWindow_create(mode, "name_here", sfClose, NULL);
     sfEvent event;
 
     sfRenderWindow_setFramerateLimit(window, 60);
-    sfRenderWindow_setVerticalSyncEnabled(window, true);
+    sfRenderWindow_setVerticalSyncEnabled(window, sfTrue);
     while (sfRenderWindow_isOpen(window)) {
         while (sfRenderWindow_pollEvent(window, &event))
             if (event.type == sfEvtClosed || event.key.code == sfKeyEscape)
